@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html PUBLIC "-EN">
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://jackrugile.com/jrumble/js/jrumble.1.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+<script type="text/javascript" src="firebase.js"></script>
+<link rel="stylesheet" href="range.css" />
+  <title>My first styled page</title>
+
+
+</head>
+<body>
+
+<!-- Main content -->
+<script type="text/javascript">
+         <!--
+        $(document).ready(function(){    
+
+	$('#imgID').jrumble();
+
+	$('#imgID').hover(function(){
+	$(this).trigger('startRumble');
+	}, function(){
+
+	$(this).trigger('stopRumble');
+	});
+
+
+
+    	});
+
+
+
+ </script>
+      
+
+<div><img id="imgID" onclick="like()" src="Lieordie-04.png" alt="Liked" style="width:104px;height:104px;">
+
+
+<div class="grad"><input type="range" min="0" max="100"></input></div>
+
+</div>
+
+</body>
+</html>
+
+
