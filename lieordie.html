@@ -3,10 +3,11 @@
 <!DOCTYPE html PUBLIC "-EN">
 <html>
 <head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://jackrugile.com/jrumble/js/jrumble.1.1.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
 <script type="text/javascript" src="firebase.js"></script>
+<script type="text/javascript" src="animate.js"></script>
 <link rel="stylesheet" href="range.css" />
   <title>My first styled page</title>
 
@@ -17,32 +18,35 @@
 <!-- Main content -->
 <script type="text/javascript">
          <!--
-        $(document).ready(function(){    
+$(document).ready(function(){    
 
-	$('#imgID').jrumble();
+	$('.imgID').jrumble();
 
-	$('#imgID').hover(function(){
+	$('.imgID').hover(function(){
 	$(this).trigger('startRumble');
 	}, function(){
 
 	$(this).trigger('stopRumble');
 	});
 
+   $('#rangeDynamic').change(function() {
+   	var rangeDynamic = $('#rangeDynamic').val();
+      console.log(rangeDynamic);
+  });
 
-
-    	});
-
-
+});
 
  </script>
       
 
-<div><img id="imgID" onclick="like()" src="Lieordie-04.png" alt="Liked" style="width:104px;height:104px;">
-
-
-<div class="grad"><input type="range" min="0" max="100"></input></div>
-
+<div><img class="imgID" onclick="like()" src="Lieordie-04.png" alt="Liked" style="width:104px;height:104px;">
 </div>
+<div><img class="imgID" onclick="disLike()" src="Lieordie-03.png" alt="Liked" style="width:104px;height:104px;">
+</div>
+
+
+<div class="grad"><input type="range" id="rangeDynamic" min="0" max="100"></input></div>
+
 
 </body>
 </html>
