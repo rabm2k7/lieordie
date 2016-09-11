@@ -6,6 +6,8 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://jackrugile.com/jrumble/js/jrumble.1.1.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+<link rel="styesheet" href="popup.css">
+<script src="jquery.popup.min.js"></script>
 <script type="text/javascript" src="firebase.js"></script>
 <script type="text/javascript" src="animate.js"></script>
 <link rel="stylesheet" href="range.css" />
@@ -14,7 +16,7 @@
 
 </head>
 <body bgcolor="#E6E6FA">
-<div><img class="imgHeader" onclick="disLike()" src="Lieordie-07.png" alt="Liked">
+<div><img class="imgHeader" src="Lieordie-07.png">
 </div>
 
 <!-- Main content -->
@@ -36,6 +38,9 @@ $(document).ready(function(){
       console.log(rangeDynamic);
   });
 
+
+   popup.open('Lieordie-04.png');
+
 });
 
 
@@ -49,7 +54,7 @@ $(document).ready(function(){
 
 
 <div class="grad"><input type="range" id="rangeDynamic" min="0" max="100"></input></div>
-<div><img class="imgBottom" onclick="disLike()" src="Lieordie-08.png" alt="Liked">
+<div><img class="imgBottom" src="Lieordie-08.png">
 </div>
 
 </body>

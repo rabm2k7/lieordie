@@ -21,6 +21,7 @@
 	   firebase.database().ref('videos/trump/like').push({
 	   		value:1
 	  });
+
 	}
 
 	function disLike(){
@@ -28,7 +29,12 @@
 	   		value:1
 	    
 	  })
+
 }
+
+
+
+
 
 ///Retreive a lie
 
