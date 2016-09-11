@@ -20,15 +20,19 @@
 
 	   firebase.database().ref('videos/trump/like').push({
 	   		value:1
+
 	  });
+     $('a.popup').popup()
 
 	}
 
 	function disLike(){
 	firebase.database().ref('videos/trump/disLike').push({
 	   		value:1
+
 	    
-	  })
+	  });
+  $('a.popup').popup()
 
 }
 
